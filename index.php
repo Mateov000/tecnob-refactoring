@@ -33,7 +33,7 @@ echo "<body>";
 echo "<h2>Listado de Estudiantes</h2>";
 echo "<a href='insert.php'>Agregar Nuevo</a><br><br>";
 
-if ($result->num_rows > 0) {
+if ($result->num_rows > 0) {//si hay algun estudiante en la base de datos
     echo "<table border='1' cellpadding='10'>";
     echo "<tr><th>Nombre</th><th>Email</th><th>Edad</th><th>Acciones</th></tr>";
     while ($row = $result->fetch_assoc()) {
